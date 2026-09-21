@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Adis Foods and Drink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>ADIS</span>
+            <small>FOODS & DRINK</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Hungry? Planning an event? Or simply want to ask us a question?
+            We're ready to hear from you.
+        </p>
+    </section>
+
+
+    <!-- CONTACT INFORMATION -->
+    <section class="contact-section">
+
+        <div class="contact-grid">
+
+            <!-- PHONE -->
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+
+                <h2>Call Us</h2>
+
+                <p>
+                    Speak directly with Adis Foods and Drink.
+                </p>
+
+                <h3>09015602488</h3>
+
+                <a href="tel:+2349015602488" class="contact-link">
+                    Call Now →
+                </a>
+            </div>
+
+
+            <!-- WHATSAPP -->
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+
+                <h2>WhatsApp</h2>
+
+                <p>
+                    Place an order, make enquiries or discuss your event
+                    with us on WhatsApp.
+                </p>
+
+                <a
+                    href="https://wa.me/2349015602488"
+                    class="btn"
+                    target="_blank"
+                >
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+
+            <!-- LOCATION -->
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+
+                <h2>Our Location</h2>
+
+                <p>
+                    Charity Rd, Pamada/Abule-Egba 101232,
+                    Lagos, Nigeria
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Charity+Rd%2C+Pamada%2FAbule-Egba%2C+Lagos%2C+Nigeria"
+                    target="_blank"
+                    class="contact-link"
+                >
+                    Get Directions →
+                </a>
+            </div>
+
+
+            <!-- OPENING HOURS -->
+            <div class="contact-card">
+                <div class="contact-icon">🕓</div>
+
+                <h2>Opening Hours</h2>
+
+                <p>
+                    Monday – Sunday
+                </p>
+
+                <h3>4:00 PM – 12:00 AM</h3>
+
+                <small>
+                    We're available every day.
+                </small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ORDER SECTION -->
+    <section class="order-section">
+
+        <p class="section-label">READY TO ORDER?</p>
+
+        <h2>Let's Get Your Food Ready 🔥</h2>
+
+        <p>
+            Send us a message on WhatsApp and tell us what you'd like
+            to order. We'll respond as soon as possible.
+        </p>
+
+        <a
+            href="https://wa.me/2349015602488?text=Hello%20Adis%20Foods%20and%20Drink,%20I%20would%20like%20to%20place%20an%20order."
+            class="btn"
+            target="_blank"
+        >
+            ORDER ON WHATSAPP
+        </a>
+
+    </section>
+
+
+    <!-- CONTACT / ENQUIRY FORM -->
+    <section class="contact-form-section">
+
+        <div class="form-container">
+
+            <div class="form-intro">
+
+                <p class="section-label">SEND US A MESSAGE</p>
+
+                <h2>Have an Enquiry?</h2>
+
+                <p>
+                    Fill in the form below and we'll open WhatsApp
+                    with your message ready to send.
+                </p>
+
+            </div>
+
+
+            <form
+                onsubmit="sendToWhatsApp(event)"
+                class="contact-form"
+            >
+
+                <label for="name">Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <label for="subject">What do you need?</label>
+
+                <select id="subject" required>
+
+                    <option value="">
+                        Select an option
+                    </option>
+
+                    <option value="Food Order">
+                        Food Order
+                    </option>
+
+                    <option value="Event Planning">
+                        Event Planning
+                    </option>
+
+                    <option value="Catering">
+                        Catering
+                    </option>
+
+                    <option value="Drinks">
+                        Drinks
+                    </option>
+
+                    <option value="General Enquiry">
+                        General Enquiry
+                    </option>
+
+                </select>
+
+
+                <label for="message">Your Message</label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Tell us what you need..."
+                    required
+                ></textarea>
+
+
+                <button type="submit" class="btn">
+                    SEND VIA WHATSAPP
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVENT ENQUIRY -->
+    <section class="event-contact">
+
+        <div class="event-contact-content">
+
+            <p class="section-label">PLANNING AN EVENT?</p>
+
+            <h2>Let's Make Your Event Special 🎉</h2>
+
+            <p>
+                Whether it's a birthday, wedding, party, corporate event
+                or any special gathering, Adis Foods and Drink can help
+                with food, drinks and event planning.
+            </p>
+
+            <a
+                href="https://wa.me/2349015602488?text=Hello%20Adis%20Foods%20and%20Drink,%20I%20would%20like%20to%20make%20an%20event%20enquiry."
+                class="btn"
+                target="_blank"
+            >
+                MAKE AN EVENT ENQUIRY
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>ADIS</h2>
+                <p>FOODS & DRINK</p>
+            </div>
+
+            <div>
+                <p>
+                    Charity Rd, Pamada/Abule-Egba 101232,
+                    Lagos, Nigeria
+                </p>
+
+                <p>
+                    📞 09015602488
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Adis Foods and Drink. All Rights Reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP FORM SCRIPT -->
+    <script>
+
+        function sendToWhatsApp(event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            const text =
+                "Hello Adis Foods and Drink!%0A%0A" +
+                "Name: " + encodeURIComponent(name) + "%0A" +
+                "Phone: " + encodeURIComponent(phone) + "%0A" +
+                "Enquiry: " + encodeURIComponent(subject) + "%0A%0A" +
+                "Message: " + encodeURIComponent(message);
+
+            const whatsappURL =
+                "https://wa.me/2349015602488?text=" + text;
+
+            window.open(whatsappURL, "_blank");
+        }
+
+    </script>
+
+</body>
+</html>
